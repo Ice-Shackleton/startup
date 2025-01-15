@@ -26,20 +26,24 @@ Users will be able to move their avatar around a map and message other players. 
 
 ### Key features
 
-- Describe your key feature
-- Describe your key feature
-- Describe your key feature
+- Instant messaging with other users on the game.
+- Reactive movement that allows for a tactile and interactive experience.
+- Satisfying mechanics that lead to relaxation.
 
 ### Technologies
 
 I am going to use the required technologies in the following ways.
 
-- **HTML** - Description here
-- **CSS** - Description here
-- **React** - Description here
-- **Service** - Description here
-- **DB/Login** - Description here
-- **WebSocket** - Description here
+- **HTML** -  Uses correct HTML structure for application. Two HTML pages, One for login and one for playing the game. Hyperlinks to save a certain avatar for repeat use.
+- **CSS** - Aims for a rather minimalist style that goes easy on the eyes while still featuring bright colors and attractive designs.
+- **React** - Provides login, avatar choice, instant messaging, display of other users' messages, and backend endpoint calls. Single page application that is reactive to user's actions.
+- **Service** - Backend Services include:
+  - retrieving movement commands
+  - storing user messages
+  - displaying user messages in the game UI
+  - allowing the user to display images of dogs with the https://dog.ceo/api/breeds/image/random service. 
+- **DB/Login** - Store users, messages, and avatar choices in database. Register and login users. Credentials securely stored in database. Can't play unless authenticated.
+- **WebSocket** - Broadcast messages to other players currently active in the game.
 
 ## 🚀 AWS deliverable
 
