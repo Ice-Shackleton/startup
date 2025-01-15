@@ -16,7 +16,7 @@ For this deliverable I did the following. I checked the box `[x]` and added a de
 
 ### Elevator pitch
 
-Users will be able to control a little avatar of their choice around a grid-based map and chat with other users on the software. They can play games with each other, catch up on life, and experience fun, satisfying controls and animations that other games lack.
+Users will be able to control a little avatar of their choices around a grid-based map and chat with other users on the software. They can play games with each other, catch up on life, and experience fun, satisfying controls and animations that other games lack.
 
 ### Design
 
