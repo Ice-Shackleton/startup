@@ -2,12 +2,9 @@
 
 [My Notes](notes.md)
 
-This is a fundamentally basic game/chatroom webspace. Users 
+This is a fundamentally basic game/chatroom webspace designed to grow my skills in animation and game design. 
 
 ## 🚀 Specification Deliverable
-
-> [!NOTE]
->  Fill in this sections as the submission artifact for this deliverable. You can refer to this [example](https://github.com/webprogramming260/startup-example/blob/main/README.md) for inspiration.
 
 For this deliverable I did the following. I checked the box `[x]` and added a description for things I completed.
 
@@ -20,18 +17,12 @@ For this deliverable I did the following. I checked the box `[x]` and added a de
 ### Elevator pitch
 
 Users will be able to control a little avatar of their choice around a grid-based map and chat with other users on the software. They can play games with each other, catch up on life, and experience fun, satisfying controls and animations that other games lack.
+
 ### Design
 
-![Design image](placeholder.png)
+![Design image](temporary.png)
 
-Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
-
-```mermaid
-sequenceDiagram
-    actor You
-    actor Website
-    You->>Website: Replace this with your design
-```
+Users will be able to move their avatar around a map and message other players. Functionality like ramming and sprinting will be included in the movement system.
 
 ### Key features
 
