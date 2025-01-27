@@ -15,10 +15,10 @@ I had no problems creating and connecting to my AWS. As of this moment, my SSH c
 - ssh -i ~/Documents/Webserver-key-01.pem ubuntu@54.164.179.151
   
 ## Caddy
-
+This was... very frustrating.
 
 ## HTML
-
+I plan on getting around my unfamiliarity with HTML by heavily borrowing from the simon code. By editing and messing with an already-formatted example, I can avoid having to start from scratch while still progressing.
 
 
 ## CSS
