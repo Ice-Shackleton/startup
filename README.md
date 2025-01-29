@@ -49,21 +49,21 @@ I am going to use the required technologies in the following ways.
 
 For this deliverable I did the following. I checked the box `[x]` and added a description for things I completed.
 
-- [ ] **Server deployed and accessible with custom domain name** - [My server link](https://yourdomainnamehere.click).
+- [x] **Server deployed and accessible with custom domain name** - [My server link](https://coolsquares-webserver.click).
 
 ## 🚀 HTML deliverable
 
 For this deliverable I did the following. I checked the box `[x]` and added a description for things I completed.
 
-- [ ] **HTML pages** - I did not complete this part of the deliverable.
-- [ ] **Proper HTML element usage** - I did not complete this part of the deliverable.
-- [ ] **Links** - I did not complete this part of the deliverable.
-- [ ] **Text** - I did not complete this part of the deliverable.
-- [ ] **3rd party API placeholder** - I did not complete this part of the deliverable.
-- [ ] **Images** - I did not complete this part of the deliverable.
-- [ ] **Login placeholder** - I did not complete this part of the deliverable.
-- [ ] **DB data placeholder** - I did not complete this part of the deliverable.
-- [ ] **WebSocket placeholder** - I did not complete this part of the deliverable.
+- [x] **HTML pages** - Completed.
+- [x] **Proper HTML element usage** - Completed.
+- [x] **Links** - Completed.
+- [x] **Text** - Completed.
+- [x] **3rd party API placeholder** - The game portion is represented by a placeholder image. This will be calling 3rd party API's like movement, React, and such. But I could definitely use tips on how to implement this better.
+- [x] **Images** - Multiple embedded images.
+- [x] **Login placeholder** - Completed.
+- [x] **DB data placeholder** - The chat logs are represented by a placeholder image, with functionality to be added later. 
+- [x] **WebSocket placeholder** - The chat logs are represented by a placeholder image, with functionality to be added later.
 
 ## 🚀 CSS deliverable
 
