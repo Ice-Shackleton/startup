@@ -24,6 +24,7 @@ Successful in this regard.
 
 ## CSS
 
+My initial plan: my display is, fortunately, quite simple. All I need is a login screen, a chat display, a movement button, and a game section.
 
 
 
