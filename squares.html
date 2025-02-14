@@ -4,8 +4,12 @@
     <meta charset="UTF-8" />
     <!-- Tell browsers not to scale the viewport automatically -->
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Simon</title>
+    <title>Squares</title>
     <link rel="icon" href="favicon.ico" />
+
+    <link rel="stylesheet" href="squares.css" />
+    <link rel="stylesheet" href="main.css" />
+
 
     <link
       href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css"
@@ -14,124 +18,52 @@
       crossorigin="anonymous"
     />
   </head>
-  <body>
-    <!-- Use header, main, and footer elements to give semantic structure -->
-    <header>
-      <h1>Squares<sup>&reg;</sup></h1>
 
-      <!-- Navigation elements -->
-      <nav>
-        <!-- Menu is a semantic alternative to <ul> that represents an interaction -->
-        <menu>
-          <li><a href="index.html">Home</a></li>
-          <li><a href="squares.html">Squares</a></li>
+  <body>
+    <header class="container-fluid">
+      <nav class="navbar fixed-top navbar-dark">
+        <a class="navbar-brand" href="#">Startup<sup>&reg;</sup></a>
+        <menu class="navbar-nav">
+          <li class="nav-item">
+            <a class="nav-link" href="index.html">Home</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link active" href="squares.html">Squares</a>
+          </li>
         </menu>
       </nav>
-
-      <!-- Since we don't have the ability to style we use old style HTML to give some visual formatting -->
-      <hr />
     </header>
 
     <main>
-      <div class="players">
-        Player:
-        <span class="player-name">Mystery player</span>
+      <div class="screen-boxes">
+        <div class="left-box">
+          <div class="game">
+          </div>
+        </div>
+        <div class="right-box">
+          <!-- <div class="text-history-container ">
+            
+          </div> -->
+          <div class="dpad-container">
+            <button class="dpad-button up">Up</button>
+            <button class="dpad-button left">Left</button>
+            <div class="center"></div>
+            <button class="dpad-button right">Right</button>
+            <button class="dpad-button down">Down</button>
+          </div>
+        </div>
       </div>
-      <ul class="notification">
-        <li class="player-name">Tim is online</li>
-        <li class="player-name">Ada is online</li>
-        <li class="player-name">Tim is typing...</li>
-      </ul>
-
-      <!-- More formatting with old style HTML -->
-      <br/>
-      <div>
-        <main>
-            <h3>Welcome to CoolSquares</h3>
-            <form method="get" action="squares.html">
-              <div>
-                <span>@</span>
-                <input type="text" placeholder="Type your message here..." />
-              </div>
-              <button type="submit">Send</button>
-            </form>
-          </main>
-      </div>
-
-      <br />
-      <div id="picture" class="picture-box"><img width="400px" src="empty.png" alt="random" /></div>
-      <div id="picture" class="picture-box"><img width="400px" src="activity.png" alt="random" /></div>
-      <br />
-
-      <style>
-        .dpad-container {
-          display: grid;
-          grid-template-areas:
-            ". up ."
-            "left center right"
-            ". down .";
-          gap: 5px;
-          justify-content: left;
-          align-items: center;
-          height: 200px;
-        }
-    
-        .dpad-button {
-          width: 100px;
-          height: 100px;
-          background-color: #007bff;
-          color: white;
-          border-radius: 8px;
-          cursor: pointer;
-          display: flex;
-          justify-content: center;
-          align-items: center;
-        }
-    
-        .dpad-button:hover {
-          background-color: #0056b3;
-        }
-    
-        .up {
-          grid-area: up;
-        }
-    
-        .down {
-          grid-area: down;
-        }
-    
-        .left {
-          grid-area: left;
-        }
-    
-        .right {
-          grid-area: right;
-        }
-    
-        .center {
-          grid-area: center;
-          background-color: transparent;
-          cursor: default;
-        }
-      </style>
-    </head>
-    <body>
-      <div class="dpad-container">
-        <button class="dpad-button up">Up</button>
-        <button class="dpad-button left">Left</button>
-        <div class="center"></div>
-        <button class="dpad-button right">Right</button>
-        <button class="dpad-button down">Down</button>
-      </div>
-    </body>
     </main>
+
     <br />
     <br />
-    <footer>
-      <hr />
-      <span class="text-reset">Author Name(s)</span>
-      <br />
-      <a href="https://github.com/Ice-Shackleton/startup/tree/main">GitHub</a>
+
+    <footer class="text-white-50">
+      <div class="container-fluid">
+        <span class="text-reset">Micah Mangrum</span>
+        <a class="text-reset" href="https://github.com/Ice-Shackleton/startup/tree/main">Github</a>
+      </div>
     </footer>
+
   </body>
 </html>

@@ -26,6 +26,14 @@ Successful in this regard.
 
 My initial plan: my display is, fortunately, quite simple. All I need is a login screen, a chat display, a movement button, and a game section.
 
+Update: I've decided to pull code from this guide (https://css-tricks.com/gooey-effect/) to add some interesting visual effects to the login screen. Besides, I want to implement gooey effects across the board in my design.
+
+So that proved harder than expected. For now I will leave it to the side.
+
+It's proving surprisingly difficult to add the containers I want for the chat functionality.
+
+So a day later it turns out my html code was a buggy mess that had no right to function. Significantly edited the structure and am currently testing items within it.
+
 
 
 ## React Part 1: Routing
