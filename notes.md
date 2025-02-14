@@ -34,6 +34,8 @@ It's proving surprisingly difficult to add the containers I want for the chat fu
 
 So a day later it turns out my html code was a buggy mess that had no right to function. Significantly edited the structure and am currently testing items within it.
 
+It's done! I learned that CSS is surprisingly difficult to work with, especially without a deeper understanding of html. I'm just glad that I can start moving on to React.
+
 
 
 ## React Part 1: Routing
