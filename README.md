@@ -69,12 +69,12 @@ For this deliverable I did the following. I checked the box `[x]` and added a de
 
 For this deliverable I did the following. I checked the box `[x]` and added a description for things I completed.
 
-- [ ] **Header, footer, and main content body** - I did not complete this part of the deliverable.
-- [ ] **Navigation elements** - I did not complete this part of the deliverable.
-- [ ] **Responsive to window resizing** - I did not complete this part of the deliverable.
-- [ ] **Application elements** - I did not complete this part of the deliverable.
-- [ ] **Application text content** - I did not complete this part of the deliverable.
-- [ ] **Application images** - I did not complete this part of the deliverable.
+- [x] **Header, footer, and main content body** - Done.
+- [x] **Navigation elements** - Two pages that can be navigated between.
+- [x] **Responsive to window resizing** - Completed.
+- [x] **Application elements** - Buttons for sending text and logging in.
+- [x] **Application text content** - Used texts for titles and instructions.
+- [x] **Application images** - Completed with a image that will represent the game area.
 
 ## 🚀 React part 1: Routing deliverable
 
