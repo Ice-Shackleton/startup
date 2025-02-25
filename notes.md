@@ -40,6 +40,9 @@ It's done! I learned that CSS is surprisingly difficult to work with, especially
 
 ## React Part 1: Routing
 
+The first step I'm going to take is reorganizing my folders to exactly match the simon exercise for the prerequisite.
+
+A bit into the conversion process, and I'm thinking that maybe I should write an "about" page...
 
 ## React Part 2: Reactivity
 
