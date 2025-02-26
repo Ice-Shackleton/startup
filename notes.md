@@ -46,5 +46,8 @@ A bit into the conversion process, and I'm thinking that maybe I should write an
 
 I've decided that the work required to make the movement buttons function in a multiplayer context is beyond my capabilities for the moment, and so will be removing it from the project for now.
 
+It's done! I found react rather intuitive to work with; the compartmentalization of the Java code
+used in previous sections made it click in my brain, for some reason.
+
 ## React Part 2: Reactivity
 

@@ -32,7 +32,7 @@
   min-height: max(80vmin, 200px);
 }
   
-  .dpad-container {
+  /* .dpad-container {
     justify-content: flex-end;
     display: grid;
     grid-template-areas:
@@ -79,5 +79,5 @@
     grid-area: center;
     background-color: transparent;
     cursor: default;
-  }
+  } */
   

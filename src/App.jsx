@@ -2,8 +2,9 @@ import React from 'react';
 import 'bootstrap/dist/css/bootstrap.min.css';
 import './main.css';
 import { BrowserRouter, NavLink, Route, Routes } from 'react-router-dom';
-import { Login } from './login/login';
+import { Login } from './login';
 import { Squares } from './squares/squares';
+import { About } from './about/about';
 
 export default function App() {
   return ( 
@@ -23,6 +24,11 @@ export default function App() {
                 Squares
               </NavLink>
             </li>
+            <li className="nav-item">
+              <NavLink className="nav-link" to="about">
+                About
+              </NavLink>
+            </li>
           </menu>
         </nav>
       </header>
@@ -30,6 +36,7 @@ export default function App() {
       <Routes>
         <Route path='/' element={<Login />} exact />
         <Route path='/squares' element={<Squares />} />
+        <Route path='/about' element={<About />} />
         <Route path='*' element={<NotFound />} />
       </Routes>
 
