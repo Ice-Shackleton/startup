@@ -1,14 +1,13 @@
 import React from 'react';
 import './squares.css';
 
-export function Squares() {
+export function Squares( props ) {
   return (
     <main>
       <div class="screen-boxes">
-        <div class="left-box">
-          <div class="game">
-          </div>
-        </div>
+        {/* <div class="left-box">
+          <div class="game"> </div>
+        </div> */}
         <div class="right-box">
           <div class="input-group mb-3">
             <input class="form-control" type="message" placeholder="Type your message here..." />
