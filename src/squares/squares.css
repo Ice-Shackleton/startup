@@ -8,13 +8,13 @@
   justify-content: space-around; /* Places content at the top without filling space */
 }
 
-.left-box, .right-box {
+.right-box {
   flex: 1;
 }
-.left-box {
+/* .left-box {
   justify-content: left;
   display: flex;
-}
+} */
 
 .right-box {
   justify-content: right;
@@ -23,61 +23,4 @@
   display: flex;
 }
 
-.game {
-  background: rgb(255, 255, 255);
-  border-radius: 1%;
-  width: 100%;
-  position:relative;
-  max-height: min(80vmin, 900px);
-  min-height: max(80vmin, 200px);
-}
-  
-  /* .dpad-container {
-    justify-content: flex-end;
-    display: grid;
-    grid-template-areas:
-      ". up ."
-      "left center right"
-      ". down .";
-    align-items: center;
-    height: 150px;
-  }
 
-  .dpad-button {
-    width: 50px;
-    height: 50px;
-    background-color: #46005f;
-    color: #ab5000;
-    border-radius: 8px;
-    cursor: pointer;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-  }
-
-  .dpad-button:hover {
-    background-color: #552866;
-  }
-
-  .up {
-    grid-area: up;
-  }
-
-  .down {
-    grid-area: down;
-  }
-
-  .left {
-    grid-area: left;
-  }
-
-  .right {
-    grid-area: right;
-  }
-
-  .center {
-    grid-area: center;
-    background-color: transparent;
-    cursor: default;
-  } */
-  
