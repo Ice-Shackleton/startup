@@ -51,3 +51,9 @@ used in previous sections made it click in my brain, for some reason.
 
 ## React Part 2: Reactivity
 
+Very, Very Hard.
+
+## Part 3: HTTP
+
+I learned a fair amount from Simon. I will be heavily relying on that understanding to complete the functionality of my own code. Largely I think websocket will be better suited for the chat element of my code; but I will see where http needs to be added beyond the login. 
+
