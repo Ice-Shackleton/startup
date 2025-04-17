@@ -57,3 +57,15 @@ Very, Very Hard.
 
 I learned a fair amount from Simon. I will be heavily relying on that understanding to complete the functionality of my own code. Largely I think websocket will be better suited for the chat element of my code; but I will see where http needs to be added beyond the login. 
 
+This was overall pretty simple! Didn't struggle too much.
+
+## Part 4: Database
+
+I was quite familiar with database work after the chess project a year back. This came as a breeze.
+
+# Part 5: Websocket
+
+I was relatively familiar with websocket work after the chess project a year back. This was a pain to get through; but I managed in the end.
+
+
+
