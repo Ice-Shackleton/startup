@@ -1,3 +1,9 @@
+const { MongoClient } = require('mongodb');
+const config = require('./dbconfig.json');
+const DB = require('./database.js');
+const { WebSocketServer } = require('ws');
+const { peerProxy } = require('./peerProxy.js');
+const url = `mongodb+srv://${config.userName}:${config.password}@${config.hostname}`;
 const cookieParser = require('cookie-parser');
 const bcrypt = require('bcryptjs');
 const express = require('express');
@@ -5,10 +11,6 @@ const uuid = require('uuid');
 const app = express();
 
 const authCookieName = 'token';
-
-// The scores and users are saved in memory and disappear whenever the service is restarted.
-let users = [];
-let messages = [];
 
 const port = process.argv.length > 2 ? process.argv[2] : 4000;
 
@@ -28,9 +30,13 @@ var apiRouter = express.Router();
 app.use(`/api`, apiRouter);
 
 apiRouter.post('/auth/create', async (req, res) => {
-    if (await findUser('email', req.body.email)) {
+  console.log("Attempting to create an authToken for a new user.");
+  console.log("Request body: ", req.body );  
+  if (await findUser('email', req.body.email)) {
+      console.log("User found.");
       res.status(409).send({ msg: 'Existing user' });
     } else {
+      console.log("User not found, creating.");
       const user = await createUser(req.body.email, req.body.password);
   
       setAuthCookie(res, user.token);
@@ -39,6 +45,7 @@ apiRouter.post('/auth/create', async (req, res) => {
   });
 
   apiRouter.post('/auth/login', async (req, res) => {
+    console.log("Attempting to create an authToken for an existing user.");  
     const user = await findUser('email', req.body.email);
     if (user) {
       if (await bcrypt.compare(req.body.password, user.password)) {
@@ -87,19 +94,23 @@ async function createUser(email, password) {
     password: passwordHash,
     token: uuid.v4(),
   };
-  users.push(user);
-
+  await DB.addUser(user);
+  console.log("successfully added a new user.");
   return user;
 }
 
 async function findUser(field, value) {
   if (!value) return null;
-
-  return users.find((u) => u[field] === value);
+  console.log("This is field and value: ", field, " ,",  value);
+  if (field === 'token') {
+    return DB.getUserByToken(value);
+  }
+  return DB.getUser(value);
 }
 
 // setAuthCookie in the HTTP response
 function setAuthCookie(res, authToken) {
+  console.log("setting an authCookie.");
   res.cookie(authCookieName, authToken, {
     secure: true,
     httpOnly: true,
@@ -107,6 +118,8 @@ function setAuthCookie(res, authToken) {
   });
 }
 
-app.listen(port, () => {
+const httpService = app.listen(port, () => {
   console.log(`Listening on port ${port}`);
 });
+
+peerProxy(httpService);

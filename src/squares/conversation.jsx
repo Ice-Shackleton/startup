@@ -1,10 +1,12 @@
-function ChatBox({ webSocket }) {
+import React from 'react';
+
+export function Conversation({ socket }) {
     const [chats, setChats] = React.useState([]);
     React.useEffect(() => {
-      webSocket.addObserver((chat) => {
+      socket.addObserver((chat) => {
         setChats((prevMessages) => [...prevMessages, chat]);
       });
-    }, [webSocket]);
+    }, [socket]);
   
     const chatEls = chats.map((chat, index) => (
       <div key={index}>

@@ -1,11 +1,12 @@
-function Chat({ webSocket }) {
-    const [name, setName] = React.useState('');
-  
-    return (
-      <main>
-        <Name updateName={setName} />
-        <Message name={name} webSocket={webSocket} />
-        <Conversation webSocket={webSocket} />
-      </main>
-    );
-  }
+import React from 'react';
+import { Message } from './message';
+import { Conversation }  from './conversation';
+
+export function Chat({ chat, username }) {
+  return (
+    <main>
+      <Message user={username} socket={chat} />
+      <Conversation socket={chat} />
+    </main>
+  );
+}

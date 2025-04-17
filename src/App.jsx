@@ -54,7 +54,12 @@ export default function App() {
           }
           exact
         />
-        <Route path='/squares' element={<Squares />} />
+        <Route
+          path='/squares'
+          element={
+            <SquaresWrapper />
+          }
+        />
         <Route path='/about' element={<About />} />
         <Route path='*' element={<NotFound />} />
       </Routes>
@@ -72,4 +77,20 @@ export default function App() {
 
 function NotFound() {
   return <main className="container-fluid bg-secondary text-center">404: Return to sender. Address unknown.</main>;
+}
+
+function SquaresWrapper() {
+  const [authState, setAuthState] = React.useState(AuthState.Unknown);
+  const [userName, setUserName] = React.useState('');
+
+  return (
+    <Squares
+      userName={userName}
+      authState={authState}
+      onAuthChange={(userName, authState) => {
+        setUserName(userName);
+        setAuthState(authState);
+      }}
+    />
+  );
 }
